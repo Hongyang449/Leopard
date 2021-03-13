@@ -29,11 +29,12 @@ conda install keras
 ```
 
 ## Dataset
-The data in bigwig format can be directly downloaded from our web server:
+The data in bigwig format can be directly downloaded from OSF repository 
+* [DNase-seq,DNA sequence,ChIP-seq GEM peak](https://osf.io/xh2wm/)
+or from our web server:
 * [DNase-seq](https://guanfiles.dcmb.med.umich.edu/Leopard/dnase_bigwig/)
 * [DNA sequence](https://guanfiles.dcmb.med.umich.edu/Leopard/dna_bigwig/)
-* [ChIP-seq train](https://guanfiles.dcmb.med.umich.edu/Leopard/chipseq_conservative_refine_bigwig/)
-* [ChIP-seq test](https://guanfiles.dcmb.med.umich.edu/Leopard/test_chipseq_conservative_refine_bigwig/)
+* [ChIP-seq GEM peak](https://guanfiles.dcmb.med.umich.edu/Leopard/chipseq_gem_bigwig/)
 
 
 Before running Leopard, please download the above data (30GB) and deposit them in the "Leopard/data/" folder. The DNA sequence bigwig files are always needed. If you only need to make predictions on one cell type, you only need to download the "avg.bigwig" and the correpsonding DNase-seq file for this specific cell type. The ChIP-seq data are optional. You only need them if you want to re-train/adapt our models or compare predictions with experimental observations.
@@ -41,11 +42,12 @@ Before running Leopard, please download the above data (30GB) and deposit them i
 The original data can be found as follows:
 
 The DNase-seq data were downloaded from the ENCODE-DREAM challenge website:
-[filtered alignment](https://www.synapse.org/#!Synapse:syn6176232)
+[filtered alignment](https://www.synapse.org/#!Synapse:syn6176232).
 
-The ChIP-seq data were downloaded from the ENCODE-DREAM challenge website:
-[conservative peaks](https://www.synapse.org/#!Synapse:syn6181337) and [fold enrichment](https://www.synapse.org/#!Synapse:syn6181334)
-and the [ENCODE project](https://www.encodeproject.org/)(The accession numbers are provided in Supplementary Table 4.)
+The ChIP-seq data were from the [ENCODE project](https://www.encodeproject.org/) with the accession numbers provided in Supplementary Table S9. 
+
+The challenge-related ChIP-seq data were downloaded from the ENCODE-DREAM challenge website:
+[conservative peaks](https://www.synapse.org/#!Synapse:syn6181337) and [fold enrichment](https://www.synapse.org/#!Synapse:syn6181334).
 
 ## Run Leopard predictions
 Once the required input files are put in the correpsonding directories, Leopard is ready to go (fast mode):
