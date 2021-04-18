@@ -1,6 +1,6 @@
 ## Leopard: fast decoding cell type-specific transcription factor binding landscape at single-nucleotide resolution
 
-Leopard is a deep learning approach to predict cell type-specific in vivo transcription factor binding sites with high accuracy, speed and resolution [Hongyang Li, Yuanfang Guan - bioRxiv, 2019, doi: https://doi.org/10.1101/856823](https://www.biorxiv.org/content/10.1101/856823v1). Please contact (hyangl@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
+Leopard is a deep learning approach to predict cell type-specific in vivo transcription factor binding sites with high accuracy, speed and resolution [Hongyang Li, Yuanfang Guan - *Genome Research*. 2021. 31: 721-731](https://genome.cshlp.org/content/31/4/721.short). Please contact (hyangl@umich.edu or gyuanfan@umich.edu) if you have any questions or suggestions.
 
 ![Figure1](figure/fig1.png?raw=true "Title")
 
