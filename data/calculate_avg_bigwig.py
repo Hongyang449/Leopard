@@ -46,7 +46,9 @@ for the_chr in chr_all:
     for the_input in input_all:
         print('loading ' + the_input)
         bw=pyBigWig.open(the_input)
-        x += bw.values(the_chr, 0, chr_len[the_chr])
+        tmp=np.array(bw.values(the_chr,0,chr_len[the_chr]))
+        tmp[np.isnan(tmp)]=0 # set nan to 0
+        x += tmp
         bw.close()
     x=x/len(input_all)
     ## convert to bigwig format
